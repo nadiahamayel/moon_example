@@ -58,7 +58,7 @@ html{
     margin: auto;
 }
 } 
-@media screen and (min-width: 776px) and (max-width: 1133px){
+@media screen and (min-width: 776px) and (max-width: 1023px){
     .collection .row .item{
         width: calc(( 100% - 90px ) / 2 );
         
@@ -94,7 +94,7 @@ html{
 }
 
 }
-@media screen and (min-width: 1134px) and (max-width: 1371px){
+@media screen and (min-width: 1024px) and (max-width: 1279px){
      .collection .row .item {
         width: calc(( 100% - 90px ) / 3 );
        
@@ -102,12 +102,9 @@ html{
     .best_sellers .row .seller_item{
     width: calc(( 100% - 90px ) / 3);
 }
-.best_sellers .row , .collection .row {
-    justify-content:center;
-    gap: 20px;
+
 }
-}
-@media screen and (min-width:1372px) {
+@media screen and (min-width:1280px) {
 
     .icon img{
         display: none;
