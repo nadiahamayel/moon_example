@@ -9,10 +9,11 @@ html{
 
 }
 .header {
- background-color: var(--primaryColor);
+ background-color: white;
  position: fixed;
  width: 100%;
  z-index: 999;
+ padding: 5px;
 }
 .container {
      margin: 0 auto;
@@ -25,6 +26,9 @@ html{
     justify-content: space-between;
     align-items: center;
 
+}
+.footer .row{
+    justify-content: center;
 }
 .header_right .shopping a{
     position: relative;
@@ -57,7 +61,8 @@ html{
     
 }
 .collection .row .item{
-    position: relative;
+    position: relative; 
+    margin-bottom: 80px;
    
 }
 .item .sale{
@@ -83,7 +88,63 @@ transition: .6s;
 .collection .row .item:hover .collection_info{
   opacity: 1;
 }
+.hero{
+    background-image: url(./img/hero_background.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+     position: relative;
+    
+     
 
+}
+.hero  .hero_info img{
+    width: 85px;
+    height: 81px;
+     
+}
+.hero .hero_info{
+    position: absolute;
+    background-color:#826F66;
+    top: 0;
+    bottom: 0;
+    left: calc(22%) ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+}
+.hero .hero_info .p_1{
+    font-family:'inter';
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFDFB;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.hero .hero_info .p_2{
+width: 200px;
+height: 80px;
+color: #FFFDFB;
+font-family: 'Garamond';
+font-weight: 700;
+font-style: Bold;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 4%;
+text-align: center;
+
+}
+.hero .hero_info .shop_now{
+width: 220;
+height: 40;
+gap: 3px;
+padding : 15px 18px;
+}
 
 @media screen and (min-width: 0) and (max-width:775px){
 
@@ -142,6 +203,96 @@ transition: .6s;
     letter-spacing: 0%;
     padding: 8px 20px;
 }
+.hero{
+
+background-position: center;
+     
+
+}
+.hero  .hero_info img{
+    width: 30%;
+    height: 30%;
+}
+.hero .hero_info{
+    left: 20% ;
+}
+.hero .hero_info .p_1{
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+.hero .hero_info .p_2{
+width: 150px;
+height: 80px;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+}
+.hero .hero_info .shop_now{
+width: 50%;
+height: 40;
+gap: 3px;
+padding : 10px 12px;
+font-size: 10px;
+}
+.hand_made .container .made  , .hand_made_1 .container .history{
+   position: relative;
+
+    
+}
+.hand_made .container ,.hand_made_1 .container{
+    width: 86%;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.hand_made .container .made .made_img  , .hand_made_1 .container .history .history_img {
+    width: 100%;
+    
+}
+.hand_made .container .made .made_info  , .hand_made_1 .container .history .history_info {
+    width: 100%;
+    position: absolute;
+    background-size: 60%;
+    object-fit: contain;
+}
+.christmas_section  .container .christmas {
+    display: grid;
+    grid-template-columns:1fr;
+    
+}
+.christmas_section  .container .christmas .christmas_img img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    
+}
+.christmas_section  .container .christmas .christmas_info {
+    width: 50%;
+    margin: 0 auto;
+
+   padding: 10px 10px;
+  
+}
+.christmas_section{
+    margin: 100px auto 300px auto;
+}
+.christmas_section .container{
+    width: 100%;
+    margin: 0 auto;
+}
+.christmas_section .container .christmas .christmas_img , .christmas_section .container .christmas .christmas_info{
+    width: 50%;
+    
+}
+
+.best_sellers{
+    margin-top: 50p;
+}
+
 } 
 @media screen and (min-width: 776px) and (max-width: 1023px){
     .collection .row .item{
@@ -176,7 +327,86 @@ transition: .6s;
     letter-spacing: 0%;
     padding: 8px 10px;
 }
+.hero{
 
+background-position: center;
+     
+
+}
+.hero  .hero_info img{
+    width: 40%;
+    height: 40%;
+}
+.hero .hero_info{
+    left: 20% ;
+}
+.hero .hero_info .p_1{
+    font-size: 16px;
+    line-height: 18px;
+    padding: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+.hero .hero_info .p_2{
+width: 200px;
+height: 80px;
+font-weight: 700;
+font-size: 20px;
+line-height: 22px;
+}
+.hero .hero_info .shop_now{
+width: 50%;
+height: 40;
+gap: 3px;
+padding : 14px 16px;
+font-size: 14px;
+}
+
+.hand_made .container .made  , .hand_made_1 .container .history{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    background-color: #F7F6F5;
+    height: 100vh;
+    background-color: aqua;
+    
+}
+.hand_made .container ,.hand_made_1 .container{
+    width: 86%;
+    display: grid;
+   
+    grid-template-rows: auto auto;
+}
+.hand_made .container .made img  , .hand_made_1 .container .history img {
+    width: 90%;
+}
+.christmas_section .container .christmas .christmas_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container{
+    width: 70%;
+}
+.christmas_section  .container .christmas .christmas_info h2{
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 2%;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+.christmas_section  .container .christmas .christmas_info a {
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 4%;
+}
+.christmas_section  .container .christmas .christmas_info p{
+font-size: 12px;
+line-height: 20px;
+}
+.christmas_section  .container .christmas .christmas_info{
+     padding: 45px 45px;
+}
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px){
      .collection .row .item {
@@ -200,6 +430,9 @@ transition: .6s;
         display: none;
     }
 
+    .christmas_section  .container .christmas .christmas_info{
+   padding: 45px 45px;
+}
 }
 @media screen and (min-width:1280px) {
 
@@ -325,4 +558,280 @@ transition: .6s;
 }
 .seller_item_information .add_cart:hover{
     background-color: rgba(0, 81, 255, 0.432);
+}
+.hand_made .container .made  , .hand_made_1 .container .history{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    background-color: #f7f5f6;
+    height: 348px;
+    
+}
+.hand_made .container .made .made_info  , .hand_made_1 .container .history .history_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+   padding: 64px 60px;
+
+
+}
+.hand_made .container .made h2 ,.hand_made_1 .container .history h2{
+    font-family: 'Garamond';
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 4%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3A3845;
+    margin-top: 24px;
+    margin-bottom: 15px;
+}
+.hand_made .container .made a ,.hand_made_1 .container .history a {
+font-family: 'Inter';
+font-weight: 700;
+font-style: Bold;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 6%;
+text-align: center;
+text-transform: uppercase;
+text-decoration: underline;
+text-decoration-style: solid;
+text-decoration-thickness: 0%;
+color: #3A3845;
+
+
+}
+.hand_made .container .made p ,.hand_made_1 .container .history p{
+font-family: 'Inter';
+font-weight: 400;
+font-style:normal;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+color: #595667;
+
+}
+.hand_made .container .made .made_img{
+    
+}
+.hand_made_1 .container .history  .history_img{
+   
+}
+.hand_made .container .made img {
+   
+}
+.hand_made .container .made .made_img {
+    
+}
+
+
+.hand_made .container .made {
+   
+   
+   
+}
+.christmas_section{
+    height: 350px;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.christmas{
+    background-color: #f6f5f7;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    overflow: hidden;
+    position: relative;
+}
+.sign .christmas_section .container .christmas{
+    background-color: #fffffff5;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    position: relative;
+}
+.christmas_section  .container .christmas .christmas_info h2{
+    font-family: 'Garamond';
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 4%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3A3845;
+    margin-top: 24px;
+    margin-bottom: 15px;
+}
+.christmas_section  .container .christmas .christmas_info a {
+font-family: 'Inter';
+font-weight: 700;
+font-style: Bold;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 6%;
+text-align: center;
+text-transform: uppercase;
+text-decoration: underline;
+text-decoration-style: solid;
+text-decoration-thickness: 0%;
+color: #3A3845;
+
+
+}
+.christmas_section  .container .christmas .christmas_info p{
+font-family: 'Inter';
+font-weight: 400;
+font-style:normal;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+color: #595667;
+}
+.christmas_section  .container .christmas .christmas_info{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   padding: 54px 50px;
+}
+.christmas_section  .container .christmas .christmas_img{
+    width: 100%;
+    height: 350px;
+   object-fit: cover;
+  
+
+}
+.sign .christmas_section .container .christmas .christmas_info .email{
+    border: none;
+    border-bottom: 1px solid #3A3845;
+    width: 300px;
+    text-align: center;
+    padding: 17px;
+}
+.sign .christmas_section .container .christmas .christmas_info button{
+width: 110px;
+height: 45px;
+margin-top: 10px;
+padding: 10px 24px;
+border-width: 1px;
+font-family: 'Inter';
+font-weight: 600;
+font-style: Bold;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 8%;
+text-align: center;
+text-transform: uppercase;
+background-color: white;
+
+
+}
+.footer{
+    background-color: #3A3845;
+    width: 100%;
+    margin: 40px 40px;
+    height: 400px;
+    position: relative;
+
+
+}
+.footer .row .footer_logo {
+   position: absolute;
+   width: 303px;
+   height: 215px;
+   top: 48px;
+    bottom: 102px;
+    left: 245px;
+   right: 727px;
+
+}
+.footer .row .vertor{
+width: 0px;
+height: 400px;
+
+
+
+}
+.footer .container .row .footer_right{
+    background-color: yellow;
+    position: absolute;
+    top: 58px;
+    bottom: 70px;
+    left: 710px;
+   right: 80px;
+   margin-left: 80px;
+}
+.footer .container .row .footer_right h4{
+color: rgb(204, 11, 11);
+}
+.footer .row .vertor img{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 628px;
+    right: 810px;
+    margin: 0 80px;
+}
+.footer .row .footer_logo p{
+font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+color: #E5E5E5;
+margin-top: 30px;
+   
+}
+.footer .row .footer_logo button{
+width: 150px;
+height: 41px;
+margin-top: 30px;
+padding: 15px 18px;
+ background-color: #3A3845;
+ font-family: 'Inter';
+font-weight: 600;
+font-style:  Bold;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 8%;
+text-align: center;
+text-transform: uppercase;
+color: white;
+border: 1px solid #F7F6F5
+
+
+}
+@media screen and (min-width: 0) and (max-width:775px){
+     .christmas_section  .container .christmas .christmas_info h2{
+   
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 3%;
+  
+}
+.christmas_section  .container .christmas .christmas_info a {
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 4%;
+}
+.christmas_section  .container .christmas .christmas_info p{
+font-size: 12px;
+line-height: 24px;
+
+}
+.christmas_section  .container .christmas .christmas_info {
+    width: 50%;
+    margin: 0 auto;
+   padding: 10px 10px;
+  
+}
 }
