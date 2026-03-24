@@ -27,9 +27,7 @@ html{
     align-items: center;
 
 }
-.footer .row{
-    justify-content: center;
-}
+
 .header_right .shopping a{
     position: relative;
     display: flex;
@@ -407,6 +405,9 @@ line-height: 20px;
 .christmas_section  .container .christmas .christmas_info{
      padding: 45px 45px;
 }
+.footer .container .row .col_3 .vertor{
+    display: none;
+}
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px){
      .collection .row .item {
@@ -433,6 +434,14 @@ line-height: 20px;
     .christmas_section  .container .christmas .christmas_info{
    padding: 45px 45px;
 }
+.footer .row {
+   
+    padding: 40px 60px;
+    gap: 20px; 
+    
+    
+}
+
 }
 @media screen and (min-width:1280px) {
 
@@ -616,25 +625,6 @@ text-align: center;
 color: #595667;
 
 }
-.hand_made .container .made .made_img{
-    
-}
-.hand_made_1 .container .history  .history_img{
-   
-}
-.hand_made .container .made img {
-   
-}
-.hand_made .container .made .made_img {
-    
-}
-
-
-.hand_made .container .made {
-   
-   
-   
-}
 .christmas_section{
     height: 350px;
   display: grid;
@@ -735,50 +725,89 @@ background-color: white;
 }
 .footer{
     background-color: #3A3845;
-    width: 100%;
-    margin: 40px 40px;
-    height: 400px;
+}
+.footer .row {
+    display: flex;
+    /* عشان يلتف في الشاشات الصغيرة */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 100px;
+    gap: 20px; /* مسافة بين الأعمدة */
     position: relative;
-
-
+    
 }
-.footer .row .footer_logo {
-   position: absolute;
-   width: 303px;
-   height: 215px;
-   top: 48px;
-    bottom: 102px;
-    left: 245px;
-   right: 727px;
 
+.footer .col_1, .footer .col_2 , .footer .col_3 {
+    flex: 1; /* كل عمود يأخذ نفس المساحة */
+    width: 250px; /* لضمان أن الأعمدة لا تصغر كثير */
 }
-.footer .row .vertor{
-width: 0px;
-height: 400px;
 
 
+.footer .vertor {
+    width: 100%; /* خليه يعرض كامل */
+   margin-top: -60px; /* بعد بسيط بينه وبين اللوغو */
+}
+
+.footer .footer_logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer .footer_logo p {
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+
+
+
+.footer .footer_right div {
+    min-width: 150px; 
+}
+
+
+
+
+
+
+.footer .container .row .footer_right h4{
+font-family: 'Inter';
+font-weight: 600;
+font-style: Bold;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 6%;
+text-transform: uppercase;
 
 }
 .footer .container .row .footer_right{
-    background-color: yellow;
-    position: absolute;
-    top: 58px;
-    bottom: 70px;
-    left: 710px;
-   right: 80px;
-   margin-left: 80px;
+   display: flex;
+   justify-content: space-around;
+   text-align: center;
+   color: #E5E5E5;
+   gap: 20px;
 }
-.footer .container .row .footer_right h4{
-color: rgb(204, 11, 11);
+.footer .container .footer_right .about_as , .footer .container .row .footer_right .services , .footer .container .row .footer_right .portfolio{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+.footer .container .row .footer_right a{
+font-family: 'Inter';
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: center;
+color: #E5E5E5;
+text-decoration: none;
+
 }
 .footer .row .vertor img{
     height: 100%;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 628px;
-    right: 810px;
-    margin: 0 80px;
+    
+    margin: 0 40px;
 }
 .footer .row .footer_logo p{
 font-family: 'Inter';
@@ -810,6 +839,44 @@ border: 1px solid #F7F6F5
 
 
 }
+.last_footer{
+width: 1110;
+height: 86;
+justify-content: space-between;
+border-top-width: 1px;
+padding: 32px;
+color: #6D758F;
+background-color: #3A3845;
+
+}
+.last_footer .container{
+    border-top: 1px solid #CAC9CF
+    
+}
+.last_footer p{
+    font-family: 'Inter';
+font-weight: 400;
+font-style: 'Regular';
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: center;
+padding: 20px;
+
+}
+.last_footer .span{
+font-family: 'Inter';
+font-weight: 400;
+font-style: 'Regular';
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: center;
+text-decoration: underline;
+text-decoration-style: solid;
+text-decoration-thickness: 0%;
+
+}
 @media screen and (min-width: 0) and (max-width:775px){
      .christmas_section  .container .christmas .christmas_info h2{
    
@@ -834,4 +901,21 @@ line-height: 24px;
    padding: 10px 10px;
   
 }
+
+
 }
+@media screen and (max-width:915px){
+
+    .footer .container .row .footer_logo{
+        width: 100%;
+    }
+    .footer .container .row .footer_right{
+   display: flex;
+  flex-direction: column;
+}
+.footer .container .row {
+        flex-direction: column; /* هذا أهم سطر 🔥 */
+        align-items: center;
+    }
+}
+
